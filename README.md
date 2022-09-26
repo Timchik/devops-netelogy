@@ -23,3 +23,6 @@ override.tf.json
 # Файлы конфигурации командной строки
 .terraformrc
 terraform.rc
+
+
+New line
