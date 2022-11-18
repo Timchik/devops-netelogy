@@ -1,6 +1,15 @@
 1)  Создадим unit для node_exporter
 
-![image](https://user-images.githubusercontent.com/42189764/202221958-55011c97-7b23-4ed2-8893-af61caee6cf4.png)
+![image](https://user-images.githubusercontent.com/42189764/202733635-3078e365-b2ab-40ad-98fb-0443f01d0add.png)
+
+Дополнительно можно добавить файл с переменными 
+EnvironmentFile=/etc/env_node_exporter
+
+![image](https://user-images.githubusercontent.com/42189764/202733431-f7dac34c-82f5-4f82-acad-a65f5e01a747.png)
+
+проверим рабоспособность
+
+![image](https://user-images.githubusercontent.com/42189764/202733273-d6ba39a4-0854-4278-ac91-6b8bf30ec2e0.png)
 
 2) Ознакомьтесь с опциями node_exporter и выводом /metrics по-умолчанию. Приведите несколько опций, которые вы бы выбрали для базового мониторинга хоста по CPU, памяти, диску и сети.
 
@@ -78,4 +87,13 @@ cat /proc/sys/fs/file-max
 А восстановило судя по всему ограничение на колличество запущенных процессов
 
 ![image](https://user-images.githubusercontent.com/42189764/202264093-97496293-8cb3-4e79-b718-2817679f4e68.png)
+
+
+По умолчанию сработало ограничение на 3554 процесса запущенных от одного пользователя
+![image](https://user-images.githubusercontent.com/42189764/202740274-da69c159-a5f7-47b0-a269-61b62ac523c2.png)
+
+можно изменить ulimit -u 100 
+Задаст максмиальное колличество запущенных процессов одного пользователя 100
+
+![image](https://user-images.githubusercontent.com/42189764/202740594-2564286b-f0fb-4b10-8e10-3f2575ec527c.png)
 
