@@ -37,11 +37,11 @@ e=$(($a+$b))
 
 Какие значения переменным c,d,e будут присвоены? Почему?
 
-| Переменная  | Значение | Обоснование |
-| ------------- | ------------- | ------------- |
-| `c`  | ???  | ??? |
-| `d`  | ???  | ??? |
-| `e`  | ???  | ??? |
+c = a + b потому что мы складываем 2 строки без указания, что это переменные
+
+d = 1+2 - мы сложили 2 переменные, но не задекларировали, что d - это integer и нужно провести арифмитическую операцию 
+
+e = 3 = потому что выполнили арифметическую операцию с использованием двойных круглых скобок
 
 ----
 
@@ -97,26 +97,15 @@ done
 ### Ваш скрипт:
 ```bash
 #!/usr/bin/env bash
-
 rm ./curl.log
-
 host=(192.168.0.1 173.194.222.113 87.250.250.242 )
-
 for a in ${host[@]}
-
 do
-
-        for (( i=0; i < 5; i++ ))
-        
-        do
-        
-                curl --connect-timeout 2 http://$a
-                
-                echo $a $i >> curl.log
-                
+        for (( i=0; i < 5; i++ ))      
+        do        
+                curl --connect-timeout 2 http://$a                
+                echo $a $i >> curl.log               
         done
-
-
 done
 ```
 Проверка 
@@ -130,7 +119,27 @@ done
 
 ### Ваш скрипт:
 ```bash
-???
+#!/usr/bin/env bash
+
+rm ./curl.log
+host=(173.194.222.113 192.168.0.1 87.250.250.242 )
+for a in ${host[@]}
+do
+        for (( i=0; i < 5; i++ ))     
+        do     
+                echo $a $i >> curl.log              
+                curl --connect-timeout 2 http://$a
+        done    
+      if (( $? != 0))
+        then  
+          break     
+      fi   
+done
+```
+![image](https://user-images.githubusercontent.com/42189764/208254107-5f160a06-12ff-4c40-a4e2-adbe9f4aa3ee.png)
+
+![image](https://user-images.githubusercontent.com/42189764/208254122-34f59d1b-28b6-430a-82bc-ab2a3d7dfb66.png)
+----
 ```
 
 ---
@@ -141,41 +150,7 @@ done
 
 ### Ваш скрипт:
 ```bash
-#!/usr/bin/env bash
 
-rm ./curl.log
-
-host=(173.194.222.113 192.168.0.1 87.250.250.242 )
-
-for a in ${host[@]}
-
-do
-
-        for (( i=0; i < 5; i++ ))
-        
-        do
-        
-                echo $a $i >> curl.log
-                
-                curl --connect-timeout 2 http://$a
-                
-
-        done
-        
-      if (( $? != 0))
-      
-      then
-      
-          break
-          
-      fi
-      
-done
-```
-![image](https://user-images.githubusercontent.com/42189764/208254107-5f160a06-12ff-4c40-a4e2-adbe9f4aa3ee.png)
-
-![image](https://user-images.githubusercontent.com/42189764/208254122-34f59d1b-28b6-430a-82bc-ab2a3d7dfb66.png)
-----
 
 ### Правила приема домашнего задания
 В личном кабинете отправлена ссылка на .md файл в вашем репозитории.
