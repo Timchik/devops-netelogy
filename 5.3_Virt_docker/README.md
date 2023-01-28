@@ -41,8 +41,3 @@ Gitlab сервер для реализации CI/CD процессов и пр
 
 ![image](https://user-images.githubusercontent.com/42189764/215279260-bdf8b12d-9150-4e55-9d89-abdb8a80667e.png)
 
-
-# Задание 4
-
-
-
