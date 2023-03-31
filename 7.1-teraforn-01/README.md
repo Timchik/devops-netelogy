@@ -12,7 +12,7 @@ personal.auto.tfvars
 4.  Нужно добавить было имя image и исправить имя с "1nginx" на "nginx"
     
 
-````
+```
 resource "docker_image" "nginx" 
 
 resource "docker_container" "nginx" 
