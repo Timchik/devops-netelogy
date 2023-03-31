@@ -1,9 +1,9 @@
 # Домашнее задание к занятию 2. «SQL»
 
 # Задача 1
-
+```
 docker run --name postgres -d --restart unless-stopped -p 5432:5432 -e POSTGRES_PASSWORD=1346 -v ${PWD}/data:/var/lib/postgresql/data -v ${PWD}/data/backup:/var/lib/postgresql/backup postgres:12.2
-
+```
 
 # Задача 2
 
@@ -41,9 +41,9 @@ width - это оценка PostgreSQL того, сколько, в средне
 
 # Задача 6
 
-
+```
 docker exec -it postgres pg_dumpall  -U postgres >  data/backup/db-backup.sql
 
 
 docker exec -it postgre2 pg_restore -U postgres  -d test_db /var/lib/postgresql/backup/db-backup.sql
-
+```
