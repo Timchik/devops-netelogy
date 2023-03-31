@@ -11,17 +11,14 @@ personal.auto.tfvars
 3.  JO9gMJA3GApKSL10
 4.  Нужно добавить было имя image и исправить имя с "1nginx" на "nginx"
     
-    ```
 
-    resource "docker_image" "nginx" {
-  name         = "nginx:latest"
-  keep_locally = true
-}
+````
+resource "docker_image" "nginx" 
 
-resource "docker_container" "nginx" {
+resource "docker_container" "nginx" 
 
+```
 
-    ```
 
 5.  ![image](https://user-images.githubusercontent.com/42189764/229206578-a56f784e-7019-4e35-81fd-5518a66892d2.png)
 
