@@ -24,5 +24,4 @@ resource "docker_container" "nginx"
 
 6. Команда опасна тем, что применяет весь код без потдверждения
 7. ![image](https://user-images.githubusercontent.com/42189764/229209990-853822bd-70cb-4895-b8b7-b4740f81246e.png)
-8. По умолчанию terraform не удаляет образы, но если добавить флаг force_remove=true то при команде terafform destroy удалит 
-   force_remove (Boolean) If true, then the image is removed forcibly when the resource is destroyed.
+8. Значение keep_locally = true. Это значит что при удаление ресурсов образы не будут удалены
