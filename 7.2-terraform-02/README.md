@@ -14,7 +14,7 @@
    core_fraction=5 - гарантированая доля vcpu
 
 2) 
-   Новые переменнst 
+   Новые переменные
     ![image](https://user-images.githubusercontent.com/42189764/231224877-b7603fec-f04c-4f60-b079-d00a5fb7aa84.png)
 
     terraform plan 
