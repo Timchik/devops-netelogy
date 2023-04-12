@@ -23,7 +23,7 @@
     terraform plan 
 
     
-    ![image](https://user-images.githubusercontent.com/42189764/231225067-ea6d3408-0a6b-47eb-a3da-294d125252bf.png)
+   ![image](https://user-images.githubusercontent.com/42189764/231225067-ea6d3408-0a6b-47eb-a3da-294d125252bf.png)
 
 4.
     
