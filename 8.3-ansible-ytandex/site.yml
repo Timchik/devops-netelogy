@@ -72,7 +72,7 @@
         name: nginx
         state: restarted
   pre_tasks:
-    - name: Enable EPEL Repository on CentOS 8
+    - name: Enable EPEL Repository on CentOS 7
       ansible.builtin.yum:
         name: epel-release
         state: latest
