@@ -14,3 +14,7 @@
 
 Плейбук идемпотентен
 
+![image](https://github.com/YagudinTimur/devops-netelogy/assets/42189764/5dffd081-eb4a-4311-a158-121967da4abd)
+
+Создал и установил коллекцию 
+запустил плейбук
