@@ -1,0 +1,9 @@
+---
+# tasks file for my_role
+- name: Write a file
+  hosts: localhost
+  tasks:
+  - name: Call my_own_module
+    my_own_module:
+      {{ path }}
+      {{ content }}
