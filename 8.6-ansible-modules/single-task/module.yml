@@ -6,3 +6,7 @@
   tasks:
     - import_role:
         name: my_role
+    
+    - my_own_module:
+        path: /home/Timur/qwe.txt
+        content: rty
