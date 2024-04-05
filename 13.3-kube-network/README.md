@@ -34,7 +34,7 @@
 
 ![image](https://github.com/YagudinTimur/devops-netelogy/assets/42189764/a83b173b-4c21-49c1-b5dc-3dbd80b27140)
 
-Разрешим от бекэнда к фронту
+Разрешим от фронта к бекэнду
 
 ![image](https://github.com/YagudinTimur/devops-netelogy/assets/42189764/290d7f23-0c43-4617-8c6e-a9517492c303)
 
